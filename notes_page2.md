@@ -454,3 +454,95 @@ $
 
 ## Looping in Python
 
+### *for* Loops
+
+In python, ***for*** loops are written like this:
+
+```python
+for item in iterable_object:
+    # do something with item
+```
+
+- An iterable object is some kind of collection of items, for instance: a list of numbers, a string of characters, a range, etc.
+- *item* is a new variable that can be called whatever you want
+- *item* references the current position of our **iterator** within the *iterable*. It will iterate over (run through) every item of the collection and then go away when it has visited all items
+
+
+*for* loops with ranges
+
+```python
+for number in range(1, 8):
+    print(number)
+```
+
+```python
+for x in range(1,10):
+    print(x)
+```
+```
+3 for.py 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+```python
+for x in range(1,10):
+    print(x)
+    print(x*x)
+```
+```
+ python3 for.py 
+1
+1
+2
+4
+3
+9
+4
+16
+5
+25
+6
+36
+7
+49
+8
+64
+9
+81
+```
+
+```python
+for char in "coffee":
+    print(char)
+```
+```
+$ python3 for.py 
+c
+o
+f
+f
+e
+e
+```
+
+```python
+for char in "coffee":
+    print(char*10)
+```
+```
+$ python3 for.py 
+cccccccccc
+oooooooooo
+ffffffffff
+ffffffffff
+eeeeeeeeee
+eeeeeeeeee
+```
